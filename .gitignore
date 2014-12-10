@@ -1,0 +1,5 @@
+*~
+~.bak
+*.py[co]
+vim/bundle/*
+notice
