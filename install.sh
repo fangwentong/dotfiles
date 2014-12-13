@@ -4,7 +4,7 @@ BASE_DIR=`pwd`
 TODAY=`date +%Y%m%d%H%M%S`
 
 #建立zshrc链接
-echo "配置zsh..."
+echo "\033[034m* 配置zsh...\033[0m"
 for i in $HOME/.zshrc $HOME/.oh-my-zsh $HOME/.dir_colors
 do [ -L $i ] && unlink $i
 done
@@ -17,7 +17,7 @@ ln -s $BASE_DIR/terminal/zsh/oh-my-zsh $HOME/.oh-my-zsh
 ln -s $BASE_DIR/terminal/zsh/dircolors.ansi-dark $HOME/.dir_colors
 
 #建立tmux配置链接
-echo "配置tmux..."
+echo "\033[034m* 配置tmux...\033[0m"
 if [ -L $HOME/.tmux.conf ];then
     unlink $HOME/.tmux.conf
 elif [ -f $HOME/.tmux.conf ];then
@@ -27,7 +27,7 @@ ln -s $BASE_DIR/terminal/tmux.conf $HOME/.tmux.conf
 
 
 #建立gitconfig链接
-echo "配置Git..."
+echo "\033[034m* 配置Git...\033[0m"
 if [ -L $HOME/.gitconfig ];then
     unlink $HOME/.gitconfig
 elif [ -f $HOME/.gitconfig ];then
@@ -37,7 +37,7 @@ ln -s $BASE_DIR/terminal/gitconfig $HOME/.gitconfig
 
 #配置vim
 cd vim
-sh -x Dependence
-sh -x install.sh
+sh Dependence
+sh install.sh
 
-echo "Config completed, just enjoy!"
+echo "\033[034m* onfig completed, just enjoy!\033[0m"
