@@ -41,7 +41,7 @@ install_fedora() {
 system_shell=$SHELL
 export SHELL="/bin/sh"
 
-if [ `uname` = "Darwin"]
+if [ `uname` = "Darwin" ]
 then
     install_mac_os
 elif [ `which apt-get` ]
