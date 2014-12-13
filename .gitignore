@@ -3,3 +3,4 @@
 *.py[co]
 vim/bundle/*
 notice
+err.log

@@ -1,0 +1,24 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    use_system_font = False
+    login_shell = True
+    background_darkness = 0.72
+    background_type = transparent
+    background_image = None
+    cursor_color = "#3036ec"
+    foreground_color = "#00ff00"
+    use_custom_command = True
+    show_titlebar = False
+    custom_command = tmux
+    font = Monaco 12
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
