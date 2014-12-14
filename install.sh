@@ -92,7 +92,6 @@ setup_git() {
 # 配置vim
 setup_vim() {
     cd vim
-    sh Dependence
     sh install.sh
 }
 
@@ -132,5 +131,8 @@ if [ "$1" = "--with-gui" ] && [ `which apt-get` ]; then
 elif [ "$1" = "--with-gui" ];then
     echo "pass"
 fi
+
+echo "\033[034m* Last Step : Change your login shell to zsh.\033[0m"
+chsh -s "/bin/zsh"
 
 echo "\033[034m* Configure completed, just enjoy!\033[0m"

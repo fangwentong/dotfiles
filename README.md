@@ -42,10 +42,18 @@ My dotfiles
     git submodule update --init
     ```
 
-3. 解决依赖关系并开始安装
+3. 开始安装
+
+    搭建基本终端环境，使用
 
     ```
-    sh Dependence && sh install.sh
+    sh install.sh
+    ```
+
+    Ubuntu 图形化界面配置, 直接使用
+
+    ```
+    sh install.sh --with-gui
     ```
 
 4. 安装会持续一段时间，保持网络畅通，耐心等待
