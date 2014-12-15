@@ -47,18 +47,10 @@ My dotfiles
     搭建基本终端环境，使用
 
     ```
-    sh install.sh
+    sh install.sh [--with-gui]     # 配置Ubuntu图形环境, 请加上 `--with-gui`
     ```
 
-    Ubuntu 图形化界面配置, 直接使用
-
-    ```
-    sh install.sh --with-gui
-    ```
-
-4. 安装会持续一段时间，保持网络畅通，耐心等待
-
-5. 安装完成后，修改部分信息，得到自己的配置
+4. 安装完成后，修改部分信息，得到自己的配置
   - 修改git/gitconfig中的邮箱和用户名
 
     ```

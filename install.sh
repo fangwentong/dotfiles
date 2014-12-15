@@ -26,8 +26,6 @@ install_ubuntu() {
 install_ubuntu_gui() {
     # 安装GVim terminator
     sudo apt-get install -y vim-gnome terminator 2>> err.log
-    # 安装 Chromium
-    sudo apt-get install -y chromium-browser 2>> err.log
     # 关闭Ubuntu错误报告
     sudo sed -i 's/enabled=1/enabled=0/' /etc/default/apport
     sudo service apport restart
@@ -122,17 +120,23 @@ setup_ubuntu_gui() {
     ln -s $BASE_DIR/ubuntu-gui/terminator/config $HOME/.config/terminator/config
 }
 
-setup_terminal
-install_dependence
+############################## Setup Start ######################################
 
 if [ "$1" = "--with-gui" ] && [ `which apt-get` ]; then
     install_ubuntu_gui
     setup_ubuntu_gui
 elif [ "$1" = "--with-gui" ];then
-    echo "pass"
+    echo "\033[33m Sorry, Can't setup GUI environment on your operating system!\033[0m"
+elif [ "$1" ]; then
+    echo "Try '\033[33msh install.sh --with-gui\033[0m' to setup ubuntu GUI environment."
 fi
+
+install_dependence
+setup_terminal
 
 echo "\033[034m* Last Step : Change your login shell to zsh.\033[0m"
 chsh -s "/bin/zsh"
 
 echo "\033[034m* Configure completed, just enjoy!\033[0m"
+
+################################ Setup End ######################################
