@@ -47,7 +47,7 @@ My dotfiles
     搭建基本终端环境，使用
 
     ```
-    sh install.sh [--with-gui]     # 配置Ubuntu图形环境, 请加上 `--with-gui`
+    sh install.sh [--with-gui]     # 若配置Ubuntu图形环境, 请加上参数 `--with-gui`
     ```
 
 4. 安装完成后，修改部分信息，得到自己的配置
@@ -61,3 +61,4 @@ My dotfiles
 ###更多
 
 获取`dotfiles`的更多信息，可以访问[http://dotfiles.github.io/](http://dotfiles.github.io/)
+
