@@ -8,10 +8,11 @@
     background_type = transparent
     background_image = None
     cursor_color = "#3036ec"
-    foreground_color = "#00ff00"
+    foreground_color = "#839496"
     show_titlebar = False
     custom_command = tmux
     font = Monaco 12
+    background_color = "#002b36"
 [layouts]
   [[default]]
     [[[child1]]]
