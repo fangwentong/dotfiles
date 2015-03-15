@@ -12,6 +12,8 @@ install_mac_os() {
     fi
     # GNU coreutils
     brew install coreutils
+    # Google Chrome Start script
+    ln -sf $BASE_DIR/scripts/chrome_osx.sh /usr/local/bin/chrome
 }
 
 install_ubuntu() {
