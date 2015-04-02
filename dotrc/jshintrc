@@ -1,0 +1,18 @@
+{
+  "boss": true,
+  "browser": true,
+  "curly": true,
+  "eqeqeq": true,
+  "es5": true,
+  "immed": true,
+  "latedef": true,
+  "jquery": true,
+  "newcap": true,
+  "noarg": true,
+  "node": true,
+  "regexp":true,
+  "smarttabs": true,
+  "sub": true,
+  "undef": true,
+  "unused": true
+}

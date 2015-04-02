@@ -122,6 +122,16 @@ setup_ubuntu_gui() {
     ln -s $BASE_DIR/ubuntu-gui/terminator/config $HOME/.config/terminator/config
 }
 
+link_others() {
+    # jshintrc
+    if [ -L $HOME/.jshintrc ];then
+        unlink $HOME/.jshintrc
+    elif [ -f $HOME/.jshintrc ];then
+        mv $HOME/.jshintrc $HOME/.jshintrc.$TODAY
+    fi
+    ln -s $BASE_DIR/dotrc/jshintrc $HOME/.jshintrc
+}
+
 ############################## Setup Start ######################################
 
 if [ "$1" = "--with-gui" ] && [ `which apt-get` ]; then
@@ -134,6 +144,7 @@ elif [ "$1" ]; then
 fi
 
 install_dependence
+link_others
 setup_terminal
 
 echo "\033[034m* Last Step : Change your login shell to zsh.\033[0m"
