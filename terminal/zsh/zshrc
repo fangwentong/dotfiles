@@ -6,6 +6,10 @@ plugins=(git github brew sublime command-not-found compleat zsh-syntax-highlight
 
 source $ZSH/oh-my-zsh.sh
 
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
+
 # User configuration
 
 export PATH=/usr/local/sbin:/usr/local/bin:$HOME/bin:$HOME/.rvm/bin:$PATH
