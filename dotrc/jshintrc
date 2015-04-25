@@ -1,7 +1,24 @@
 {
+  "predef": [
+    "phantom",
+    "module",
+    "require",
+    "__dirname",
+    "process",
+    "console",
+    "it",
+    "describe",
+    "before",
+    "beforeEach",
+    "after",
+    "afterEach",
+    "ace",
+    "$"
+  ],
   "browser": true,
   "jquery": true,
   "node": true,
+  "es5": true,
   "indent":2,
   "camelcase": true,
   "eqeqeq": true,
@@ -9,7 +26,7 @@
   "newcap": true,
   "maxlen":80,
   "quotmark": "single",
-  "strict": true,
+  "strict": false,
   "undef": true,
   "unused": true,
   "eqnull": true
