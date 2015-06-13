@@ -19,6 +19,7 @@
   "jquery": true,
   "node": true,
   "es5": true,
+  "esnext": true,
   "indent":2,
   "camelcase": true,
   "eqeqeq": true,
