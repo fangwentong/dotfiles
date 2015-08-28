@@ -130,6 +130,14 @@ link_others() {
         mv $HOME/.jshintrc $HOME/.jshintrc.$TODAY
     fi
     ln -s $BASE_DIR/dotrc/jshintrc $HOME/.jshintrc
+
+    for i in $HOME/.jshintrc $HOME/.npmrc
+    do [ -L $i ] && unlink $i || [ -f $i ] && mv $i $i.$TODAY
+    done
+
+    ln -s $BASE_DIR/dotrc/jshintrc $HOME/.jshintrc
+    ln -s $BASE_DIR/dotrc/npmrc $HOME/.npmrc
+
 }
 
 ############################## Setup Start ######################################
