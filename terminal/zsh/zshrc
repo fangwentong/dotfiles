@@ -33,8 +33,10 @@ then
     # Node Path
     export NODE_PATH=/usr/local/lib/node_modules
 
-    export PATH="$(brew --prefix php56)/bin:$PATH"
-    export PATH="$(brew --prefix php56)/sbin:$PATH"
+    if [ `brew --prefix php56 2> /dev/null` ]; then
+        export PATH="$(brew --prefix php56)/bin:$PATH"
+        export PATH="$(brew --prefix php56)/sbin:$PATH"
+    fi
 
     alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
     alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
