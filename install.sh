@@ -12,6 +12,8 @@ install_mac_os() {
     fi
     # GNU coreutils
     brew install coreutils
+    # iterm2 上传/下载文件 see https://github.com/mmastrac/iterm2-zmodem
+    brew install lrzsz
     # Google Chrome Start script
     ln -sf $BASE_DIR/scripts/chrome_osx.sh /usr/local/bin/chrome
 }

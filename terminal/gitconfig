@@ -1,6 +1,6 @@
 [user]
 	email = fangwentong2012@gmail.com
-	name = 房文同
+	name = fangwentong
 [color]
 	ui = true
     status = auto
@@ -13,8 +13,11 @@
 [core]
 	excludesfile = /Users/tong/.gitignore_global
     editor = vim
+	autocrlf = input
 [merge]
     tool = vimdiff
+[pull]
+    rebase = true
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [filter "hawser"]
