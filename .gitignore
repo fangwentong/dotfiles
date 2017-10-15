@@ -4,3 +4,4 @@
 vim/bundle/*
 notice
 err.log
+.DS_Store
