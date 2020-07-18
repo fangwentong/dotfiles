@@ -2,8 +2,21 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="wezm+"
 
-plugins=(git github command-not-found compleat zsh-syntax-highlighting
-    node nvm npm pip ubuntu sudo osx brew mvn
+plugins=(git
+    github
+    command-not-found
+    compleat
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    node
+    nvm
+    npm
+    pip
+    ubuntu
+    sudo
+    osx
+    brew
+    mvn
     tmux)
 
 source $ZSH/oh-my-zsh.sh
