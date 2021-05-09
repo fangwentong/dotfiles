@@ -1,7 +1,7 @@
 My dotfiles
 ---
 
-###关于
+### 关于
 
 此仓库存放的是一些linux常用的配置文件，
 通过软链接建立与系统配置文件的联系（系统的相关配置文件通过软链接指向该仓库中的文件).
@@ -14,7 +14,7 @@ My dotfiles
 - 依托GitHub等平台，实现配置备份与共享.
 
 
-###配置列表
+### 配置列表
 
 1. `zsh`配置
 
@@ -27,7 +27,7 @@ My dotfiles
 3. `vim` 配置
     参见[fangwentong/vimrc](https://github.com/fangwentong/vimrc)
 
-###安装
+### 安装
 
 1. clone本仓库到本地
 
@@ -58,7 +58,7 @@ My dotfiles
     git config --glabal user.email "你的邮箱"
     ```
 
-###更多
+### 更多
 
 获取`dotfiles`的更多信息，可以访问[http://dotfiles.github.io/](http://dotfiles.github.io/)
 

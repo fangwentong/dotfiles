@@ -11,9 +11,10 @@
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [core]
-	excludesfile = /Users/tong/.gitignore_global
+	excludesfile = /Users/fangwentong/.gitignore
     editor = vim
 	autocrlf = input
+    ignoreCase = false
 [merge]
     tool = vimdiff
 [pull]
