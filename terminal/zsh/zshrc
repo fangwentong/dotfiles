@@ -14,7 +14,7 @@ plugins=(git
     pip
     ubuntu
     sudo
-    osx
+    macos
     brew
     mvn
     tmux)
@@ -119,4 +119,9 @@ alias node="node --harmony"
 if [ -f ~/.profile ]; then
     source ~/.profile
 fi
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
