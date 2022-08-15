@@ -27,7 +27,7 @@ setopt EXTENDED_HISTORY
 
 # User configuration
 
-export PATH=/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.rvm/bin:$PATH:$HOME/work/bin
+export PATH=/sbin:/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.rvm/bin:$PATH:$HOME/work/bin:$HOME/.pyenv/shims:$HOME/go/bin
 
 export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -113,13 +113,9 @@ alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 
-# Node related
-alias node="node --harmony"
-
 if [ -f ~/.profile ]; then
     source ~/.profile
 fi
-
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

@@ -67,6 +67,8 @@ setup_zsh() {
     ln -s $BASE_DIR/terminal/zsh/zshrc $HOME/.zshrc
     ln -s $BASE_DIR/terminal/zsh/oh-my-zsh $HOME/.oh-my-zsh
     ln -s $BASE_DIR/terminal/zsh/dircolors.ansi-dark $HOME/.dir_colors
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 }
 
 # 配置tmux

@@ -1,6 +1,7 @@
 [user]
 	email = fangwentong2012@gmail.com
 	name = fangwentong
+
 [color]
 	ui = true
     status = auto
@@ -29,3 +30,8 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[includeIf "gitdir:work/"]
+  path = .gitconfig-work
