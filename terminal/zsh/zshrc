@@ -27,7 +27,7 @@ setopt EXTENDED_HISTORY
 
 # User configuration
 
-export PATH=/sbin:/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.rvm/bin:$PATH:$HOME/work/bin:$HOME/.pyenv/shims:$HOME/go/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/sbin:/bin:$HOME/bin:$HOME/.rvm/bin:$PATH:$HOME/work/bin:$HOME/.pyenv/shims:$HOME/go/bin
 
 export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
